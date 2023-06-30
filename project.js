@@ -125,7 +125,8 @@ const game = () => {
     const rows = transpose(reels);
     printRows(rows);
     const winnings = getWinnings(rows, bet, numOfLines);
-    balance += Number(winnings);
+    balance += Number(winnings)
+    ;
     console.log("You Won, $" + winnings.toString());
     if (balance <= 0) {
       console.log("You Ran Out of Money!");
